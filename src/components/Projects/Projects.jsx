@@ -1,10 +1,10 @@
 import React from "react";
-import skillcss from "./Projects/SkillCard.module.css"
+// import skillcss from "./Projects/SkillCard.module.css"
 import styles from "./Projects.module.css";
 import skills from "../../data/skills.json";
 import projects from "../../data/projects.json";
 import { ProjectCard } from "./ProjectCard";
-import { SkillCard } from "./SkillCard";  // <-- check filename here
+// import { SkillCards } from "./SkillCards";  // <-- check filename here
 
 export const Projects = () => {
   return (
@@ -16,12 +16,12 @@ export const Projects = () => {
         ))}
       </div>
 
-      <h2 className={styles.title}>Skills</h2>
+      {/* <h2 className={styles.title}>Skills</h2>
       <div className={styles.skillcss}>
         {skills.map((skill, id) => (
-          <SkillCard key={id} skill={skill} />
+          <SkillCards key={id} skill={skill} />
         ))}
-      </div>
+      </div> */}
     </section>
   );
 };
